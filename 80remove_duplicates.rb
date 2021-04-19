@@ -12,8 +12,8 @@ def remove_duplicates(nums)
             if count > 2
                 (count-2).times do |_|
                     nums.delete_at(i)
+                    j -= 1
                 end
-                j -= 1
                 i = j
                 count = 0
             elsif
